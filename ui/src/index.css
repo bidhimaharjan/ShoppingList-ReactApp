@@ -1,0 +1,40 @@
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.addItemForm {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+
+.itemButtons {
+  display: flex;
+  gap: 16px;
+}
+
+.dialog {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.done {
+  text-decoration: line-through;
+}
