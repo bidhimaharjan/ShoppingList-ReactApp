@@ -14,8 +14,16 @@ if (process.env.DEVELOPMENT) {
 }
 
 // Routes
-app.get("/", (req, res) => {
-  res.send("Hello World!");
+// Route handler for the root endpoint
+app.get('/', (req, res) => {
+  const apiInfo = {
+    message: 'Welcome to the Node.js CRUD API',
+    version: '1.0',
+    routes: {
+      items: '/item', // Endpoint for managing shopping items
+    }
+  };
+  res.json(apiInfo);
 });
 
 app.get("/item", async (req, res) => {
